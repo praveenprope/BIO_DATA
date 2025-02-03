@@ -7,6 +7,8 @@ import Preview from "../PreviewPages/Preview";
 import Preview2 from "../PreviewPages/Preview2";
 import Preview3 from "../PreviewPages/Preview3";
 import Preview4 from "../PreviewPages/Preview4";
+import Preview5 from "../PreviewPages/Preview5";
+import Preview6 from "../PreviewPages/Preview6";
 
 const BioDataForm = () => {
   const [fields, setFields] = useState({
@@ -115,6 +117,12 @@ const BioDataForm = () => {
       </div> 
       <div className="mt-6 p-6 bg-white shadow-md rounded-md">
         <Preview4 fields={fields} />
+      </div> 
+      <div className="mt-6 p-6 bg-white shadow-md rounded-md">
+        <Preview5 fields={fields} />
+      </div> 
+      <div className="mt-6 p-6 bg-white shadow-md rounded-md">
+        <Preview6 fields={fields} />
       </div> 
         </div> 
     
