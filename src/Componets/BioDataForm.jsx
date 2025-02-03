@@ -3,7 +3,10 @@ import PersonalDetails from "./PersonalDetails";
 import FamilyDetails from "./FamilyDetails";
 import ContactDetails from "./ContactDetails";
 import GenderSelection from "./GenderSelection";
-import Preview from "./Preview";
+import Preview from "../PreviewPages/Preview";
+import Preview2 from "../PreviewPages/Preview2";
+import Preview3 from "../PreviewPages/Preview3";
+import Preview4 from "../PreviewPages/Preview4";
 
 const BioDataForm = () => {
   const [fields, setFields] = useState({
@@ -62,7 +65,7 @@ const BioDataForm = () => {
   };
 
   return (
-    <div className="p-6 max-w-4xl mx-auto bg-gray-50 shadow-xl rounded-xl">
+    <div className="p-6  mx-auto shadow-xl rounded-xl w-full ">
       <h1 className="text-3xl font-bold mb-6 text-center text-blue-600">BIO-DATA</h1>
 
       <div className="mb-6 p-6 bg-white shadow-md rounded-md">
@@ -100,9 +103,21 @@ const BioDataForm = () => {
       </div>
 
       {/* Include Preview */}
+      <div className="flex w-full flex-wrap justify-center items-center ">
       <div className="mt-6 p-6 bg-white shadow-md rounded-md">
         <Preview fields={fields} />
       </div>
+      <div className="mt-6 p-6 bg-white shadow-md rounded-md">
+        <Preview2 fields={fields} />
+      </div>
+      <div className="mt-6 p-6 bg-white shadow-md rounded-md">
+        <Preview3 fields={fields} />
+      </div> 
+      <div className="mt-6 p-6 bg-white shadow-md rounded-md">
+        <Preview4 fields={fields} />
+      </div> 
+        </div> 
+    
     </div>
   );
 };
